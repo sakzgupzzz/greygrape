@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.left-panel {
+    width: 300px;
+    background-color: #3b3f42;
+    color: white;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.left-panel h2,
+.left-panel h3 {
+    margin-top: 0;
+}
+
+.projects-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.project-item {
+    border-bottom: 1px solid #555;
+    padding: 10px 0;
+}
+
+.project-header,
+.subfolder-header {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.dropdown-arrow {
+    margin-right: 10px;
+}
+
+.subfolder-list,
+.textfile-list {
+    list-style-type: none;
+    padding-left: 20px; /* Indentation for subfolders */
+    margin-left: 20px; /* Additional indentation for subfolders */
+    display: none;
+}
+
+.subfolder-item {
+    padding: 5px 0;
+    border-bottom: 1px solid #666;
+}
+
+.textfile-list li {
+    cursor: pointer;
+    padding: 2px 0;
+}
+
+.textfile-list li:hover {
+    text-decoration: underline;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+}

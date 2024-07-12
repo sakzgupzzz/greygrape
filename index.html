@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage with Scrollable Left Panel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <h2>Projects</h2>
+            <div class="projects-list">
+                <h3>My Projects</h3>
+                <ul>
+                    <li class="project-item">
+                        <div class="project-header" onclick="toggleSubfolders('example-project-subfolders')">
+                            <span class="dropdown-arrow">▶</span> Example Project
+                        </div>
+                        <ul id="example-project-subfolders" class="subfolder-list">
+                            <li class="subfolder-item">
+                                <div class="subfolder-header" onclick="toggleSubfolders('example-project-subfolder1')">
+                                    <span class="dropdown-arrow">▶</span> Subfolder 1
+                                </div>
+                                <ul id="example-project-subfolder1" class="textfile-list">
+                                    <li onclick="showContent('example-project-subfolder1-file1')">File 1</li>
+                                    <li onclick="showContent('example-project-subfolder1-file2')">File 2</li>
+                                </ul>
+                            </li>
+                            <li class="subfolder-item">
+                                <div class="subfolder-header" onclick="toggleSubfolders('example-project-subfolder2')">
+                                    <span class="dropdown-arrow">▶</span> Subfolder 2
+                                </div>
+                                <ul id="example-project-subfolder2" class="textfile-list">
+                                    <li onclick="showContent('example-project-subfolder2-file1')">File 1</li>
+                                    <li onclick="showContent('example-project-subfolder2-file2')">File 2</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Add other projects in similar structure -->
+                </ul>
+            </div>
+        </div>
+        <div class="main-content">
+            <h1>Main Content</h1>
+            <div id="file-content" contenteditable="true">
+                <p>This is the main content area.</p>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
