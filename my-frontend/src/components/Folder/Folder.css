@@ -1,0 +1,17 @@
+.folder {
+  margin: 10px 0;
+}
+
+.folder-header {
+  cursor: pointer;
+  padding: 5px;
+  background-color: #FF9F1C;
+  color: white;
+  border-radius: 5px;
+}
+
+.folder-content {
+  margin-left: 20px;
+  padding: 5px;
+}
+
